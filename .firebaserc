@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "staging": "aihub-47689",
+    "default": "aihub-47689"
+  },
+  "targets": {},
+  "etags": {}
+}

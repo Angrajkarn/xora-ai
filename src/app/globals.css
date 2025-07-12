@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%; /* Very light gray */
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 271 76% 53%; /* Deep Indigo */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 180 100% 25%; /* Teal */
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 271 76% 53%;
+    --radius: 0.5rem;
+
+    --chart-1: hsl(210, 90%, 55%);
+    --chart-2: hsl(145, 63%, 49%);
+    --chart-3: hsl(262, 80%, 65%);
+    --chart-4: hsl(25, 95%, 53%);
+    --chart-5: hsl(180, 70%, 45%);
+    --chart-6: hsl(340, 90%, 70%);
+    --chart-7: hsl(80, 60%, 50%);
+    --chart-8: hsl(0, 75%, 60%);
+    --chart-9: hsl(195, 85%, 50%);
+    --chart-10: hsl(45, 90%, 55%);
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 271 76% 53%; /* Deep Indigo */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 180 100% 35%; /* Teal */
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 271 76% 53%;
+
+    --chart-1: hsl(210, 90%, 65%);
+    --chart-2: hsl(145, 63%, 59%);
+    --chart-3: hsl(262, 80%, 75%);
+    --chart-4: hsl(25, 95%, 63%);
+    --chart-5: hsl(180, 70%, 55%);
+    --chart-6: hsl(340, 90%, 80%);
+    --chart-7: hsl(80, 60%, 60%);
+    --chart-8: hsl(0, 75%, 70%);
+    --chart-9: hsl(195, 85%, 60%);
+    --chart-10: hsl(45, 90%, 65%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for the app */
+.glassmorphic {
+    @apply bg-card/50 backdrop-blur-lg border border-black/10;
+}
+
+.dark .glassmorphic {
+    @apply bg-card/50 backdrop-blur-lg border border-white/10;
+}
+
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

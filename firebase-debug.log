@@ -1,0 +1,491 @@
+[debug] [2025-07-10T07:33:29.619Z] ----------------------------------------------------------------------
+[debug] [2025-07-10T07:33:29.624Z] Command:       /nix/store/rbdrkcs5kkwpalxcd7c6bnm33lk2955n-nodejs-20.19.0/bin/node /nix/store/fprgfkwna33crhc86jqbf5878piivvgw-firebase-tools-14.7.0/lib/node_modules/firebase-tools/lib/bin/firebase.js emulators:start --project=demo-app --only=auth,firestore
+[debug] [2025-07-10T07:33:29.625Z] CLI Version:   14.7.0
+[debug] [2025-07-10T07:33:29.626Z] Platform:      linux
+[debug] [2025-07-10T07:33:29.626Z] Node Version:  v20.19.0
+[debug] [2025-07-10T07:33:29.627Z] Time:          Thu Jul 10 2025 07:33:29 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-10T07:33:29.627Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-10T07:33:29.633Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-07-10T07:33:30.514Z] Object "/apphosting" in "firebase.json" is missing required property: {"missingProperty":"rootDir"}
+[debug] [2025-07-10T07:33:30.514Z] Field "/apphosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2025-07-10T07:33:30.516Z] Field "/apphosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2025-07-10T07:33:31.176Z] openjdk version "21.0.5" 2024-10-15
+OpenJDK Runtime Environment (build 21.0.5+1-nixos)
+OpenJDK 64-Bit Server VM (build 21.0.5+1-nixos, mixed mode, sharing)
+
+[debug] [2025-07-10T07:33:31.206Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: firestore"}}
+[info] i  emulators: Detected demo project ID "demo-app", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail. {"metadata":{"emulator":{"name":"hub"},"message":"Detected demo project ID \"demo-app\", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail."}}
+[warn] ⚠  auth: Not starting the auth emulator, make sure you have run firebase init. {"metadata":{"emulator":{"name":"auth"},"message":"Not starting the auth emulator, make sure you have run firebase init."}}
+[warn] ⚠  hub: Error when trying to check port 4400 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4400 {"metadata":{"emulator":{"name":"hub"},"message":"Error when trying to check port 4400 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4400"}}
+[warn] ⚠  hub: Port 4400 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"hub"},"message":"Port 4400 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  hub: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"hub"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  ui: Error when trying to check port 4000 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4000 {"metadata":{"emulator":{"name":"ui"},"message":"Error when trying to check port 4000 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4000"}}
+[warn] ⚠  ui: Port 4000 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"ui"},"message":"Port 4000 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  ui: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"ui"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  logging: Error when trying to check port 4500 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4500 {"metadata":{"emulator":{"name":"logging"},"message":"Error when trying to check port 4500 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4500"}}
+[warn] ⚠  logging: Port 4500 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"logging"},"message":"Port 4500 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  logging: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"logging"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  firestore: Error when trying to check port 8080 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:8080 {"metadata":{"emulator":{"name":"firestore"},"message":"Error when trying to check port 8080 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:8080"}}
+[warn] ⚠  firestore: Port 8080 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"firestore"},"message":"Port 8080 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  firestore: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"firestore"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  firestore.websocket: Error when trying to check port 9150 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:9150 {"metadata":{"emulator":{"name":"firestore"},"message":"Error when trying to check port 9150 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:9150"}}
+[warn] ⚠  firestore: Port 9150 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"firestore"},"message":"Port 9150 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  firestore: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"firestore"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[debug] [2025-07-10T07:33:31.220Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-07-10T07:33:31.226Z] [hub] writing locator at /tmp/hub-demo-app.json
+[debug] [2025-07-10T07:33:31.243Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-07-10T07:33:31.243Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-07-10T07:33:31.243Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/nix/store/w60wgw0k95kiq4yl5f561xhydyg07gf7-emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","demo-app","--rules","/home/user/studio/firestore.rules","--single_project_mode",true],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/nix/store/w60wgw0k95kiq4yl5f561xhydyg07gf7-emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"demo-app\",\"--rules\",\"/home/user/studio/firestore.rules\",\"--single_project_mode\",true],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to firestore-debug.log"}}
+[debug] [2025-07-10T07:33:31.677Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-07-10T07:33:31.677Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-07-10T07:33:34.489Z] Jul 10, 2025 7:33:34 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 10, 2025 7:33:34 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2025-07-10T07:33:34.535Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2025-07-10T07:33:34.537Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2025-07-10T07:33:34.661Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect ECONNREFUSED 127.0.0.1:40001. If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Firestore │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  firestore: Change detected, updating rules... 
+[debug] [2025-07-10T07:34:33.317Z] >>> [apiv2][query] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules [none]
+[debug] [2025-07-10T07:34:33.317Z] >>> [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules {"ignore_errors":true,"rules":{"files":[{"name":"security.rules","content":"rules_version = '2';\n\nservice cloud.firestore {\n  match /databases/{database}/documents {\n  \n    // WORKSPACES\n    // Users can:\n    // 1. Create a workspace if they are the owner.\n    // 2. Read, update, or delete workspaces they are a member of.\n    match /workspaces/{workspaceId} {\n      allow read, update, delete: if request.auth != null && \n                                   'members' in resource.data && \n                                   resource.data.members is list &&\n                                   request.auth.uid in resource.data.members;\n\n      allow create: if request.auth != null && \n                       request.auth.uid == request.resource.data.ownerId;\n    }\n\n    // CHATS\n    // Users can:\n    // 1. Create a chat if they are the owner and a member of the target workspace.\n    // 2. Read/delete chats they are a member of (or own).\n    // 3. Update chats (e.g., title, members) securely.\n    match /chats/{chatId} {\n      // Allow reading if user is owner OR a member.\n      // This supports queries by ownerId and by members.\n      allow read: if request.auth != null &&\n                     (request.auth.uid == resource.data.ownerId ||\n                      ('members' in resource.data && resource.data.members is list && request.auth.uid in resource.data.members));\n                      \n      allow delete: if request.auth != null && \n                       'members' in resource.data &&\n                       resource.data.members is list && \n                       request.auth.uid in resource.data.members;\n\n      allow create: if request.auth != null && \n                       request.auth.uid == request.resource.data.ownerId &&\n                       (request.resource.data.workspaceId == null ||\n                        (\n                          exists(/databases/$(database)/documents/workspaces/$(request.resource.data.workspaceId)) &&\n                          request.auth.uid in get(/databases/$(database)/documents/workspaces/$(request.resource.data.workspaceId)).data.members\n                        )\n                       );\n\n      // This rule allows a user to update a chat IF:\n      // 1. They will be a member after the update is complete.\n      // 2. They are not removing any other members from the chat.\n      // This securely handles both joining a chat and updating its title.\n      allow update: if request.auth != null &&\n                       'members' in resource.data &&\n                       resource.data.members is list &&\n                       request.auth.uid in request.resource.data.members &&\n                       request.resource.data.members.hasAll(resource.data.members);\n\n      // MESSAGES (Direct access by path for members)\n      // This allows members of a chat to read and create messages in that chat.\n      match /messages/{messageId} {\n        allow read, create, delete: if request.auth != null && \n                                     'members' in get(/databases/$(database)/documents/chats/$(chatId)).data &&\n                                     get(/databases/$(database)/documents/chats/$(chatId)).data.members is list &&\n                                     request.auth.uid in get(/databases/$(database)/documents/chats/$(chatId)).data.members;\n        // Disallow updates on individual messages for simplicity.\n        allow update: if false;\n      }\n    }\n    \n    // MESSAGES (Collection Group access for dashboard)\n    // This allows the dashboard query to read all messages belonging to a user.\n    // This rule is combined with the one above. A read is allowed if either rule passes.\n    match /{path=**}/messages/{messageId} {\n      // Users can only read messages from chats they own for analytics purposes.\n      allow read: if request.auth != null && \n                   'ownerId' in resource.data && \n                   request.auth.uid == resource.data.ownerId;\n\n      // Disallow any writes through this general collection group rule for security.\n      // Writes must happen through the specific path: /chats/{chatId}/messages/{messageId}\n      allow write: if false;\n    }\n    \n    // USERS\n    // Users can get, create, and update their own preferences document.\n    // The document ID must match their authentication UID.\n    match /users/{userId} {\n        allow get, create, update: if request.auth != null && request.auth.uid == userId;\n        // Disallow listing all users or deleting a profile for security.\n        allow list, delete: if false;\n    }\n  }\n}"}]}}
+[debug] [2025-07-10T07:34:33.336Z] Jul 10, 2025 7:34:33 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 10, 2025 7:34:33 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-07-10T07:34:33.606Z] Jul 10, 2025 7:34:33 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 10, 2025 7:34:33 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2025-07-10T07:34:35.095Z] <<< [apiv2][status] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules 200
+[debug] [2025-07-10T07:34:35.096Z] <<< [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules {}
+[info] ✔  firestore: Rules updated. 
+[debug] [2025-07-11T07:44:58.030Z] ----------------------------------------------------------------------
+[debug] [2025-07-11T07:44:58.033Z] Command:       /nix/store/rbdrkcs5kkwpalxcd7c6bnm33lk2955n-nodejs-20.19.0/bin/node /nix/store/fprgfkwna33crhc86jqbf5878piivvgw-firebase-tools-14.7.0/lib/node_modules/firebase-tools/lib/bin/firebase.js emulators:start --project=demo-app --only=auth,firestore
+[debug] [2025-07-11T07:44:58.034Z] CLI Version:   14.7.0
+[debug] [2025-07-11T07:44:58.034Z] Platform:      linux
+[debug] [2025-07-11T07:44:58.034Z] Node Version:  v20.19.0
+[debug] [2025-07-11T07:44:58.035Z] Time:          Fri Jul 11 2025 07:44:58 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-11T07:44:58.035Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-11T07:44:58.039Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-07-11T07:44:59.173Z] Object "/apphosting" in "firebase.json" is missing required property: {"missingProperty":"rootDir"}
+[debug] [2025-07-11T07:44:59.174Z] Field "/apphosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2025-07-11T07:44:59.176Z] Field "/apphosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2025-07-11T07:44:59.650Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-07-11T07:44:59.650Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-07-11T07:45:00.061Z] openjdk version "21.0.5" 2024-10-15
+OpenJDK Runtime Environment (build 21.0.5+1-nixos)
+OpenJDK 64-Bit Server VM (build 21.0.5+1-nixos, mixed mode, sharing)
+
+[debug] [2025-07-11T07:45:00.105Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: firestore"}}
+[info] i  emulators: Detected demo project ID "demo-app", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail. {"metadata":{"emulator":{"name":"hub"},"message":"Detected demo project ID \"demo-app\", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail."}}
+[warn] ⚠  auth: Not starting the auth emulator, make sure you have run firebase init. {"metadata":{"emulator":{"name":"auth"},"message":"Not starting the auth emulator, make sure you have run firebase init."}}
+[warn] ⚠  hub: Error when trying to check port 4400 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4400 {"metadata":{"emulator":{"name":"hub"},"message":"Error when trying to check port 4400 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4400"}}
+[warn] ⚠  hub: Port 4400 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"hub"},"message":"Port 4400 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  hub: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"hub"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  ui: Error when trying to check port 4000 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4000 {"metadata":{"emulator":{"name":"ui"},"message":"Error when trying to check port 4000 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4000"}}
+[warn] ⚠  ui: Port 4000 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"ui"},"message":"Port 4000 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  ui: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"ui"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  logging: Error when trying to check port 4500 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4500 {"metadata":{"emulator":{"name":"logging"},"message":"Error when trying to check port 4500 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4500"}}
+[warn] ⚠  logging: Port 4500 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"logging"},"message":"Port 4500 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  logging: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"logging"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  firestore: Error when trying to check port 8080 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:8080 {"metadata":{"emulator":{"name":"firestore"},"message":"Error when trying to check port 8080 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:8080"}}
+[warn] ⚠  firestore: Port 8080 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"firestore"},"message":"Port 8080 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  firestore: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"firestore"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  firestore.websocket: Error when trying to check port 9150 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:9150 {"metadata":{"emulator":{"name":"firestore"},"message":"Error when trying to check port 9150 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:9150"}}
+[warn] ⚠  firestore: Port 9150 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"firestore"},"message":"Port 9150 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  firestore: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"firestore"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[debug] [2025-07-11T07:45:00.120Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-07-11T07:45:00.128Z] [hub] writing locator at /tmp/hub-demo-app.json
+[debug] [2025-07-11T07:45:00.143Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-07-11T07:45:00.143Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-07-11T07:45:00.143Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/nix/store/w60wgw0k95kiq4yl5f561xhydyg07gf7-emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","demo-app","--rules","/home/user/studio/firestore.rules","--single_project_mode",true],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/nix/store/w60wgw0k95kiq4yl5f561xhydyg07gf7-emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"demo-app\",\"--rules\",\"/home/user/studio/firestore.rules\",\"--single_project_mode\",true],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to firestore-debug.log"}}
+[debug] [2025-07-11T07:45:04.059Z] Jul 11, 2025 7:45:03 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 11, 2025 7:45:03 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2025-07-11T07:45:04.164Z] API endpoint: http://127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2025-07-11T07:45:04.280Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect ECONNREFUSED 127.0.0.1:40001. If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Firestore │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-07-11T07:45:32.523Z] Jul 11, 2025 7:45:32 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 11, 2025 7:45:32 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-07-11T07:45:32.944Z] Jul 11, 2025 7:45:32 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 11, 2025 7:45:32 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-07-11T07:45:33.910Z] Jul 11, 2025 7:45:33 AM io.grpc.netty.NettyServerTransport notifyTerminated
+INFO: Transport failed
+io.netty.handler.codec.http2.Http2Exception: Unexpected HTTP/1.x request: GET / 
+	at io.netty.handler.codec.http2.Http2Exception.connectionError(Http2Exception.java:107)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.readClientPrefaceString(Http2ConnectionHandler.java:315)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.decode(Http2ConnectionHandler.java:245)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler.decode(Http2ConnectionHandler.java:451)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 11, 2025 7:45:33 AM io.grpc.netty.NettyServerTransport notifyTerminated\nINFO: Transport failed\nio.netty.handler.codec.http2.Http2Exception: Unexpected HTTP/1.x request: GET / \n\tat io.netty.handler.codec.http2.Http2Exception.connectionError(Http2Exception.java:107)\n\tat io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.readClientPrefaceString(Http2ConnectionHandler.java:315)\n\tat io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.decode(Http2ConnectionHandler.java:245)\n\tat io.netty.handler.codec.http2.Http2ConnectionHandler.decode(Http2ConnectionHandler.java:451)\n\tat io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)\n\tat io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n\n"}}
+[debug] [2025-07-11T07:45:34.339Z] Jul 11, 2025 7:45:34 AM io.grpc.netty.NettyServerTransport notifyTerminated
+INFO: Transport failed
+io.netty.handler.codec.http2.Http2Exception: HTTP/2 client preface string missing or corrupt. Hex dump for received bytes: 16030105a8010005a4030386839f2a5aa5112e3f669c0354
+	at io.netty.handler.codec.http2.Http2Exception.connectionError(Http2Exception.java:107)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.readClientPrefaceString(Http2ConnectionHandler.java:319)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.decode(Http2ConnectionHandler.java:245)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler.decode(Http2ConnectionHandler.java:451)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 11, 2025 7:45:34 AM io.grpc.netty.NettyServerTransport notifyTerminated\nINFO: Transport failed\nio.netty.handler.codec.http2.Http2Exception: HTTP/2 client preface string missing or corrupt. Hex dump for received bytes: 16030105a8010005a4030386839f2a5aa5112e3f669c0354\n\tat io.netty.handler.codec.http2.Http2Exception.connectionError(Http2Exception.java:107)\n\tat io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.readClientPrefaceString(Http2ConnectionHandler.java:319)\n\tat io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.decode(Http2ConnectionHandler.java:245)\n\tat io.netty.handler.codec.http2.Http2ConnectionHandler.decode(Http2ConnectionHandler.java:451)\n\tat io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)\n\tat io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n\n"}}
+[debug] [2025-07-11T07:45:34.747Z] Jul 11, 2025 7:45:34 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 11, 2025 7:45:34 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[info] i  firestore: Change detected, updating rules... 
+[debug] [2025-07-11T07:46:16.458Z] >>> [apiv2][query] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules [none]
+[debug] [2025-07-11T07:46:16.459Z] >>> [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules {"ignore_errors":true,"rules":{"files":[{"name":"security.rules","content":"rules_version = '2';\n\nservice cloud.firestore {\n  match /databases/{database}/documents {\n  \n    // WORKSPACES\n    // Users can:\n    // 1. Create a workspace if they are the owner.\n    // 2. Read, update, or delete workspaces they are a member of.\n    match /workspaces/{workspaceId} {\n      allow read, update, delete: if request.auth != null && \n                                   'members' in resource.data && \n                                   resource.data.members is list &&\n                                   request.auth.uid in resource.data.members;\n\n      allow create: if request.auth != null && \n                       request.auth.uid == request.resource.data.ownerId;\n    }\n\n    // CHATS\n    // Users can:\n    // 1. Create a chat if they are the owner and a member of the target workspace.\n    // 2. Read/delete chats they are a member of (or own).\n    // 3. Update chats (e.g., title, members) securely.\n    match /chats/{chatId} {\n      // Allow reading if user is owner OR a member.\n      // This supports queries by ownerId and by members.\n      allow read: if request.auth != null &&\n                     (request.auth.uid == resource.data.ownerId ||\n                      ('members' in resource.data && resource.data.members is list && request.auth.uid in resource.data.members));\n                      \n      allow delete: if request.auth != null && \n                       'members' in resource.data &&\n                       resource.data.members is list && \n                       request.auth.uid in resource.data.members;\n\n      allow create: if request.auth != null && \n                       request.auth.uid == request.resource.data.ownerId &&\n                       (request.resource.data.workspaceId == null ||\n                        (\n                          exists(/databases/$(database)/documents/workspaces/$(request.resource.data.workspaceId)) &&\n                          request.auth.uid in get(/databases/$(database)/documents/workspaces/$(request.resource.data.workspaceId)).data.members\n                        )\n                       );\n\n      // This rule allows a user to update a chat IF:\n      // 1. They will be a member after the update is complete.\n      // 2. They are not removing any other members from the chat.\n      // This securely handles both joining a chat and updating its title.\n      allow update: if request.auth != null &&\n                       'members' in resource.data &&\n                       resource.data.members is list &&\n                       request.auth.uid in request.resource.data.members &&\n                       request.resource.data.members.hasAll(resource.data.members);\n\n      // MESSAGES (Direct access by path for members)\n      // This allows members of a chat to read and create messages in that chat.\n      match /messages/{messageId} {\n        allow read, create, delete: if request.auth != null && \n                                     'members' in get(/databases/$(database)/documents/chats/$(chatId)).data &&\n                                     get(/databases/$(database)/documents/chats/$(chatId)).data.members is list &&\n                                     request.auth.uid in get(/databases/$(database)/documents/chats/$(chatId)).data.members;\n        // Disallow updates on individual messages for simplicity.\n        allow update: if false;\n      }\n    }\n    \n    // MESSAGES (Collection Group access for dashboard)\n    // This allows the dashboard query to read all messages belonging to a user.\n    // This rule is combined with the one above. A read is allowed if either rule passes.\n    match /{path=**}/messages/{messageId} {\n      // Users can only read messages from chats they own for analytics purposes.\n      allow read: if request.auth != null && \n                   'ownerId' in resource.data && \n                   request.auth.uid == resource.data.ownerId;\n\n      // Disallow any writes through this general collection group rule for security.\n      // Writes must happen through the specific path: /chats/{chatId}/messages/{messageId}\n      allow write: if false;\n    }\n    \n    // USERS\n    // Users can get, create, and update their own preferences document.\n    // The document ID must match their authentication UID.\n    match /users/{userId} {\n        allow get, create, update: if request.auth != null && request.auth.uid == userId;\n        // Disallow listing all users or deleting a profile for security.\n        allow list, delete: if false;\n    }\n  }\n}"}]}}
+[debug] [2025-07-11T07:46:16.475Z] Jul 11, 2025 7:46:16 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 11, 2025 7:46:16 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-07-11T07:46:17.096Z] Jul 11, 2025 7:46:17 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 11, 2025 7:46:17 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2025-07-11T07:46:22.374Z] <<< [apiv2][status] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules 200
+[debug] [2025-07-11T07:46:22.377Z] <<< [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules {}
+[info] ✔  firestore: Rules updated. 
+[debug] [2025-07-11T07:54:36.837Z] Jul 11, 2025 7:54:36 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 11, 2025 7:54:36 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2025-07-11T08:54:36.624Z] Jul 11, 2025 8:54:36 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 11, 2025 8:54:36 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2025-07-12T13:19:27.097Z] ----------------------------------------------------------------------
+[debug] [2025-07-12T13:19:27.105Z] Command:       /nix/store/rbdrkcs5kkwpalxcd7c6bnm33lk2955n-nodejs-20.19.0/bin/node /nix/store/fprgfkwna33crhc86jqbf5878piivvgw-firebase-tools-14.7.0/lib/node_modules/firebase-tools/lib/bin/firebase.js emulators:start --project=demo-app --only=auth,firestore
+[debug] [2025-07-12T13:19:27.106Z] CLI Version:   14.7.0
+[debug] [2025-07-12T13:19:27.106Z] Platform:      linux
+[debug] [2025-07-12T13:19:27.106Z] Node Version:  v20.19.0
+[debug] [2025-07-12T13:19:27.109Z] Time:          Sat Jul 12 2025 13:19:27 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-12T13:19:27.109Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-12T13:19:27.114Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-07-12T13:19:27.955Z] Object "/apphosting" in "firebase.json" is missing required property: {"missingProperty":"rootDir"}
+[debug] [2025-07-12T13:19:27.956Z] Field "/apphosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2025-07-12T13:19:27.956Z] Field "/apphosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2025-07-12T13:19:28.388Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-07-12T13:19:28.391Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-07-12T13:19:28.794Z] openjdk version "21.0.5" 2024-10-15
+OpenJDK Runtime Environment (build 21.0.5+1-nixos)
+OpenJDK 64-Bit Server VM (build 21.0.5+1-nixos, mixed mode, sharing)
+
+[debug] [2025-07-12T13:19:28.832Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: firestore"}}
+[info] i  emulators: Detected demo project ID "demo-app", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail. {"metadata":{"emulator":{"name":"hub"},"message":"Detected demo project ID \"demo-app\", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail."}}
+[warn] ⚠  auth: Not starting the auth emulator, make sure you have run firebase init. {"metadata":{"emulator":{"name":"auth"},"message":"Not starting the auth emulator, make sure you have run firebase init."}}
+[warn] ⚠  hub: Error when trying to check port 4400 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4400 {"metadata":{"emulator":{"name":"hub"},"message":"Error when trying to check port 4400 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4400"}}
+[warn] ⚠  hub: Port 4400 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"hub"},"message":"Port 4400 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  hub: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"hub"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  ui: Error when trying to check port 4000 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4000 {"metadata":{"emulator":{"name":"ui"},"message":"Error when trying to check port 4000 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4000"}}
+[warn] ⚠  ui: Port 4000 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"ui"},"message":"Port 4000 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  ui: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"ui"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  logging: Error when trying to check port 4500 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4500 {"metadata":{"emulator":{"name":"logging"},"message":"Error when trying to check port 4500 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4500"}}
+[warn] ⚠  logging: Port 4500 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"logging"},"message":"Port 4500 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  logging: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"logging"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  firestore: Error when trying to check port 8080 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:8080 {"metadata":{"emulator":{"name":"firestore"},"message":"Error when trying to check port 8080 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:8080"}}
+[warn] ⚠  firestore: Port 8080 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"firestore"},"message":"Port 8080 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  firestore: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"firestore"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  firestore.websocket: Error when trying to check port 9150 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:9150 {"metadata":{"emulator":{"name":"firestore"},"message":"Error when trying to check port 9150 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:9150"}}
+[warn] ⚠  firestore: Port 9150 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"firestore"},"message":"Port 9150 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  firestore: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"firestore"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[debug] [2025-07-12T13:19:28.848Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-07-12T13:19:28.855Z] [hub] writing locator at /tmp/hub-demo-app.json
+[debug] [2025-07-12T13:19:28.870Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-07-12T13:19:28.870Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-07-12T13:19:28.870Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/nix/store/w60wgw0k95kiq4yl5f561xhydyg07gf7-emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","demo-app","--rules","/home/user/studio/firestore.rules","--single_project_mode",true],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/nix/store/w60wgw0k95kiq4yl5f561xhydyg07gf7-emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"demo-app\",\"--rules\",\"/home/user/studio/firestore.rules\",\"--single_project_mode\",true],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to firestore-debug.log"}}
+[debug] [2025-07-12T13:19:32.321Z] Jul 12, 2025 1:19:32 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 12, 2025 1:19:32 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2025-07-12T13:19:32.376Z] API endpoint: http://127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST= {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST="}}
+[debug] [2025-07-12T13:19:32.377Z] 127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2025-07-12T13:19:32.571Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect ECONNREFUSED 127.0.0.1:40001. If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Firestore │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  firestore: Change detected, updating rules... 
+[debug] [2025-07-12T13:20:17.343Z] >>> [apiv2][query] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules [none]
+[debug] [2025-07-12T13:20:17.345Z] >>> [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules {"ignore_errors":true,"rules":{"files":[{"name":"security.rules","content":"rules_version = '2';\n\nservice cloud.firestore {\n  match /databases/{database}/documents {\n  \n    // WORKSPACES\n    // Users can:\n    // 1. Create a workspace if they are the owner.\n    // 2. Read, update, or delete workspaces they are a member of.\n    match /workspaces/{workspaceId} {\n      allow read, update, delete: if request.auth != null && \n                                   'members' in resource.data && \n                                   resource.data.members is list &&\n                                   request.auth.uid in resource.data.members;\n\n      allow create: if request.auth != null && \n                       request.auth.uid == request.resource.data.ownerId;\n    }\n\n    // CHATS\n    // Users can:\n    // 1. Create a chat if they are the owner and a member of the target workspace.\n    // 2. Read/delete chats they are a member of (or own).\n    // 3. Update chats (e.g., title, members) securely.\n    match /chats/{chatId} {\n      // Allow reading if user is owner OR a member.\n      // This supports queries by ownerId and by members.\n      allow read: if request.auth != null &&\n                     (request.auth.uid == resource.data.ownerId ||\n                      ('members' in resource.data && resource.data.members is list && request.auth.uid in resource.data.members));\n                      \n      allow delete: if request.auth != null && \n                       'members' in resource.data &&\n                       resource.data.members is list && \n                       request.auth.uid in resource.data.members;\n\n      allow create: if request.auth != null && \n                       request.auth.uid == request.resource.data.ownerId &&\n                       (request.resource.data.workspaceId == null ||\n                        (\n                          exists(/databases/$(database)/documents/workspaces/$(request.resource.data.workspaceId)) &&\n                          request.auth.uid in get(/databases/$(database)/documents/workspaces/$(request.resource.data.workspaceId)).data.members\n                        )\n                       );\n\n      // This rule allows a user to update a chat IF:\n      // 1. They will be a member after the update is complete.\n      // 2. They are not removing any other members from the chat.\n      // This securely handles both joining a chat and updating its title.\n      allow update: if request.auth != null &&\n                       'members' in resource.data &&\n                       resource.data.members is list &&\n                       request.auth.uid in request.resource.data.members &&\n                       request.resource.data.members.hasAll(resource.data.members);\n\n      // MESSAGES (Direct access by path for members)\n      // This allows members of a chat to read and create messages in that chat.\n      match /messages/{messageId} {\n        allow read, create, delete: if request.auth != null && \n                                     'members' in get(/databases/$(database)/documents/chats/$(chatId)).data &&\n                                     get(/databases/$(database)/documents/chats/$(chatId)).data.members is list &&\n                                     request.auth.uid in get(/databases/$(database)/documents/chats/$(chatId)).data.members;\n        // Disallow updates on individual messages for simplicity.\n        allow update: if false;\n      }\n    }\n    \n    // MESSAGES (Collection Group access for dashboard)\n    // This allows the dashboard query to read all messages belonging to a user.\n    // This rule is combined with the one above. A read is allowed if either rule passes.\n    match /{path=**}/messages/{messageId} {\n      // Users can only read messages from chats they own for analytics purposes.\n      allow read: if request.auth != null && \n                   'ownerId' in resource.data && \n                   request.auth.uid == resource.data.ownerId;\n\n      // Disallow any writes through this general collection group rule for security.\n      // Writes must happen through the specific path: /chats/{chatId}/messages/{messageId}\n      allow write: if false;\n    }\n    \n    // USERS\n    // Users can get, create, and update their own preferences document.\n    // The document ID must match their authentication UID.\n    match /users/{userId} {\n        allow get, create, update: if request.auth != null && request.auth.uid == userId;\n        // Disallow listing all users or deleting a profile for security.\n        allow list, delete: if false;\n    }\n  }\n}"}]}}
+[debug] [2025-07-12T13:20:17.372Z] Jul 12, 2025 1:20:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 12, 2025 1:20:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-07-12T13:20:17.735Z] Jul 12, 2025 1:20:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 12, 2025 1:20:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2025-07-12T13:20:19.627Z] <<< [apiv2][status] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules 200
+[debug] [2025-07-12T13:20:19.628Z] <<< [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules {}
+[info] ✔  firestore: Rules updated. 
+[debug] [2025-07-12T18:44:19.804Z] ----------------------------------------------------------------------
+[debug] [2025-07-12T18:44:19.810Z] Command:       /nix/store/rbdrkcs5kkwpalxcd7c6bnm33lk2955n-nodejs-20.19.0/bin/node /nix/store/fprgfkwna33crhc86jqbf5878piivvgw-firebase-tools-14.7.0/lib/node_modules/firebase-tools/lib/bin/firebase.js emulators:start --project=demo-app --only=auth,firestore
+[debug] [2025-07-12T18:44:19.811Z] CLI Version:   14.7.0
+[debug] [2025-07-12T18:44:19.812Z] Platform:      linux
+[debug] [2025-07-12T18:44:19.812Z] Node Version:  v20.19.0
+[debug] [2025-07-12T18:44:19.812Z] Time:          Sat Jul 12 2025 18:44:19 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-12T18:44:19.813Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-12T18:44:21.294Z] Object "/apphosting" in "firebase.json" is missing required property: {"missingProperty":"rootDir"}
+[debug] [2025-07-12T18:44:21.295Z] Field "/apphosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2025-07-12T18:44:21.295Z] Field "/apphosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2025-07-12T18:44:22.218Z] openjdk version "21.0.5" 2024-10-15
+OpenJDK Runtime Environment (build 21.0.5+1-nixos)
+OpenJDK 64-Bit Server VM (build 21.0.5+1-nixos, mixed mode, sharing)
+
+[debug] [2025-07-12T18:44:22.281Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: firestore"}}
+[info] i  emulators: Detected demo project ID "demo-app", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail. {"metadata":{"emulator":{"name":"hub"},"message":"Detected demo project ID \"demo-app\", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail."}}
+[warn] ⚠  auth: Not starting the auth emulator, make sure you have run firebase init. {"metadata":{"emulator":{"name":"auth"},"message":"Not starting the auth emulator, make sure you have run firebase init."}}
+[warn] ⚠  hub: Error when trying to check port 4400 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4400 {"metadata":{"emulator":{"name":"hub"},"message":"Error when trying to check port 4400 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4400"}}
+[warn] ⚠  hub: Port 4400 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"hub"},"message":"Port 4400 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  hub: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"hub"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  ui: Error when trying to check port 4000 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4000 {"metadata":{"emulator":{"name":"ui"},"message":"Error when trying to check port 4000 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4000"}}
+[warn] ⚠  ui: Port 4000 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"ui"},"message":"Port 4000 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  ui: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"ui"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  logging: Error when trying to check port 4500 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4500 {"metadata":{"emulator":{"name":"logging"},"message":"Error when trying to check port 4500 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:4500"}}
+[warn] ⚠  logging: Port 4500 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"logging"},"message":"Port 4500 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  logging: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"logging"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  firestore: Error when trying to check port 8080 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:8080 {"metadata":{"emulator":{"name":"firestore"},"message":"Error when trying to check port 8080 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:8080"}}
+[warn] ⚠  firestore: Port 8080 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"firestore"},"message":"Port 8080 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  firestore: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"firestore"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[warn] ⚠  firestore.websocket: Error when trying to check port 9150 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:9150 {"metadata":{"emulator":{"name":"firestore"},"message":"Error when trying to check port 9150 on ::1: Error: listen EADDRNOTAVAIL: address not available ::1:9150"}}
+[warn] ⚠  firestore: Port 9150 is available on 127.0.0.1 but not ::1. This may cause issues with some clients. {"metadata":{"emulator":{"name":"firestore"},"message":"Port 9150 is available on 127.0.0.1 but not ::1. This may cause issues with some clients."}}
+[warn] ⚠  firestore: If you encounter connectivity issues, consider switching to a different port or explicitly specifying "host": "<ip address>" instead of hostname in firebase.json {"metadata":{"emulator":{"name":"firestore"},"message":"If you encounter connectivity issues, consider switching to a different port or explicitly specifying \"host\": \"<ip address>\" instead of hostname in firebase.json"}}
+[debug] [2025-07-12T18:44:22.300Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-07-12T18:44:22.311Z] [hub] writing locator at /tmp/hub-demo-app.json
+[debug] [2025-07-12T18:44:22.344Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-07-12T18:44:22.345Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-07-12T18:44:22.345Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/nix/store/w60wgw0k95kiq4yl5f561xhydyg07gf7-emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","demo-app","--rules","/home/user/studio/firestore.rules","--single_project_mode",true],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/nix/store/w60wgw0k95kiq4yl5f561xhydyg07gf7-emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"demo-app\",\"--rules\",\"/home/user/studio/firestore.rules\",\"--single_project_mode\",true],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to firestore-debug.log"}}
+[debug] [2025-07-12T18:44:27.268Z] Jul 12, 2025 6:44:27 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 12, 2025 6:44:27 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2025-07-12T18:44:27.346Z] API endpoint: http://127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2025-07-12T18:44:27.490Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect ECONNREFUSED 127.0.0.1:40001. If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Firestore │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-07-12T18:45:03.096Z] Jul 12, 2025 6:45:03 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 12, 2025 6:45:03 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-07-12T18:45:03.549Z] Jul 12, 2025 6:45:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 12, 2025 6:45:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-07-12T18:45:04.891Z] Jul 12, 2025 6:45:04 PM io.grpc.netty.NettyServerTransport notifyTerminated
+INFO: Transport failed
+io.netty.handler.codec.http2.Http2Exception: Unexpected HTTP/1.x request: GET / 
+	at io.netty.handler.codec.http2.Http2Exception.connectionError(Http2Exception.java:107)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.readClientPrefaceString(Http2ConnectionHandler.java:315)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.decode(Http2ConnectionHandler.java:245)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler.decode(Http2ConnectionHandler.java:451)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 12, 2025 6:45:04 PM io.grpc.netty.NettyServerTransport notifyTerminated\nINFO: Transport failed\nio.netty.handler.codec.http2.Http2Exception: Unexpected HTTP/1.x request: GET / \n\tat io.netty.handler.codec.http2.Http2Exception.connectionError(Http2Exception.java:107)\n\tat io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.readClientPrefaceString(Http2ConnectionHandler.java:315)\n\tat io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.decode(Http2ConnectionHandler.java:245)\n\tat io.netty.handler.codec.http2.Http2ConnectionHandler.decode(Http2ConnectionHandler.java:451)\n\tat io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)\n\tat io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n\n"}}
+[debug] [2025-07-12T18:45:04.960Z] Jul 12, 2025 6:45:04 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 12, 2025 6:45:04 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2025-07-12T18:45:05.121Z] Jul 12, 2025 6:45:05 PM io.grpc.netty.NettyServerTransport notifyTerminated
+INFO: Transport failed
+io.netty.handler.codec.http2.Http2Exception: HTTP/2 client preface string missing or corrupt. Hex dump for received bytes: 16030105a8010005a40303c96ce6f3275d2eeb40170049f1
+	at io.netty.handler.codec.http2.Http2Exception.connectionError(Http2Exception.java:107)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.readClientPrefaceString(Http2ConnectionHandler.java:319)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.decode(Http2ConnectionHandler.java:245)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler.decode(Http2ConnectionHandler.java:451)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 12, 2025 6:45:05 PM io.grpc.netty.NettyServerTransport notifyTerminated\nINFO: Transport failed\nio.netty.handler.codec.http2.Http2Exception: HTTP/2 client preface string missing or corrupt. Hex dump for received bytes: 16030105a8010005a40303c96ce6f3275d2eeb40170049f1\n\tat io.netty.handler.codec.http2.Http2Exception.connectionError(Http2Exception.java:107)\n\tat io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.readClientPrefaceString(Http2ConnectionHandler.java:319)\n\tat io.netty.handler.codec.http2.Http2ConnectionHandler$PrefaceDecoder.decode(Http2ConnectionHandler.java:245)\n\tat io.netty.handler.codec.http2.Http2ConnectionHandler.decode(Http2ConnectionHandler.java:451)\n\tat io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)\n\tat io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n\n"}}
+[info] i  firestore: Change detected, updating rules... 
+[debug] [2025-07-12T18:45:23.222Z] >>> [apiv2][query] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules [none]
+[debug] [2025-07-12T18:45:23.229Z] >>> [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules {"ignore_errors":true,"rules":{"files":[{"name":"security.rules","content":"rules_version = '2';\n\nservice cloud.firestore {\n  match /databases/{database}/documents {\n  \n    // WORKSPACES\n    // Users can:\n    // 1. Create a workspace if they are the owner.\n    // 2. Read, update, or delete workspaces they are a member of.\n    match /workspaces/{workspaceId} {\n      allow read, update, delete: if request.auth != null && \n                                   'members' in resource.data && \n                                   resource.data.members is list &&\n                                   request.auth.uid in resource.data.members;\n\n      allow create: if request.auth != null && \n                       request.auth.uid == request.resource.data.ownerId;\n    }\n\n    // CHATS\n    // Users can:\n    // 1. Create a chat if they are the owner and a member of the target workspace.\n    // 2. Read/delete chats they are a member of (or own).\n    // 3. Update chats (e.g., title, members) securely.\n    match /chats/{chatId} {\n      // Allow reading if user is owner OR a member.\n      // This supports queries by ownerId and by members.\n      allow read: if request.auth != null &&\n                     (request.auth.uid == resource.data.ownerId ||\n                      ('members' in resource.data && resource.data.members is list && request.auth.uid in resource.data.members));\n                      \n      allow delete: if request.auth != null && \n                       'members' in resource.data &&\n                       resource.data.members is list && \n                       request.auth.uid in resource.data.members;\n\n      allow create: if request.auth != null && \n                       request.auth.uid == request.resource.data.ownerId &&\n                       (request.resource.data.workspaceId == null ||\n                        (\n                          exists(/databases/$(database)/documents/workspaces/$(request.resource.data.workspaceId)) &&\n                          request.auth.uid in get(/databases/$(database)/documents/workspaces/$(request.resource.data.workspaceId)).data.members\n                        )\n                       );\n\n      // This rule allows a user to update a chat IF:\n      // 1. They will be a member after the update is complete.\n      // 2. They are not removing any other members from the chat.\n      // This securely handles both joining a chat and updating its title.\n      allow update: if request.auth != null &&\n                       'members' in resource.data &&\n                       resource.data.members is list &&\n                       request.auth.uid in request.resource.data.members &&\n                       request.resource.data.members.hasAll(resource.data.members);\n\n      // MESSAGES (Direct access by path for members)\n      // This allows members of a chat to read and create messages in that chat.\n      match /messages/{messageId} {\n        allow read, create, delete: if request.auth != null && \n                                     'members' in get(/databases/$(database)/documents/chats/$(chatId)).data &&\n                                     get(/databases/$(database)/documents/chats/$(chatId)).data.members is list &&\n                                     request.auth.uid in get(/databases/$(database)/documents/chats/$(chatId)).data.members;\n        // Disallow updates on individual messages for simplicity.\n        allow update: if false;\n      }\n    }\n    \n    // MESSAGES (Collection Group access for dashboard)\n    // This allows the dashboard query to read all messages belonging to a user.\n    // This rule is combined with the one above. A read is allowed if either rule passes.\n    match /{path=**}/messages/{messageId} {\n      // Users can only read messages from chats they own for analytics purposes.\n      allow read: if request.auth != null && \n                   'ownerId' in resource.data && \n                   request.auth.uid == resource.data.ownerId;\n\n      // Disallow any writes through this general collection group rule for security.\n      // Writes must happen through the specific path: /chats/{chatId}/messages/{messageId}\n      allow write: if false;\n    }\n    \n    // USERS\n    // Users can get, create, and update their own preferences document.\n    // The document ID must match their authentication UID.\n    match /users/{userId} {\n        allow get, create, update: if request.auth != null && request.auth.uid == userId;\n        // Disallow listing all users or deleting a profile for security.\n        allow list, delete: if false;\n    }\n  }\n}"}]}}
+[debug] [2025-07-12T18:45:23.253Z] Jul 12, 2025 6:45:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 12, 2025 6:45:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-07-12T18:45:25.872Z] Jul 12, 2025 6:45:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 12, 2025 6:45:25 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2025-07-12T18:45:33.105Z] <<< [apiv2][status] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules 200
+[debug] [2025-07-12T18:45:33.108Z] <<< [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/demo-app:securityRules {}
+[info] ✔  firestore: Rules updated. 

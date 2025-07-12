@@ -1,0 +1,10 @@
+steps:
+  # Step 1: Install dependencies
+  # This step uses the official npm builder image to run 'npm install'.
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+
+  # Step 2: Build the Next.js application
+  # This step runs the 'npm run build' command to create an optimized production build.
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
